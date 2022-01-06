@@ -1,0 +1,42 @@
+@include desktop{
+    html body main {
+        width: 800px;
+        height: 400px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+
+        .inputs {
+            width: 50%;
+            padding-right: 2rem;
+            height: 100%;
+
+            button {
+                width: 30%;
+            }
+
+            .input__custom {
+                width: 30%;
+            }
+        }
+
+        .results {
+            width: 50%;
+            height: 100%;
+            padding: 2rem;
+
+            grid-template-areas: 'tip-amount tip-amount-total'
+                                'tip-amount-person tip-amount-total'
+                                'tip-total total-bill'
+                                'tip-total-person total-bill'
+                                '. .'
+                                '. .'
+                                '. .'
+                                'reset reset';
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            gap: 0
+        }
+    }
+}

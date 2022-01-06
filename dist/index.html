@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  
+  <header>
+    <h1>SPLI</h1>
+    <h1>TTER</h1>
+  </header>
+
+  <main>
+    <div class="inputs">
+      <div class="inputs__bill">
+        <h1 class="inputs__title">Bill</h1>
+        <input type="number" name="bill" id="bill" placeholder="0">
+        <img src="images/icon-dollar.svg" alt="dollar">
+      </div>
+      <div class="inputs__tip">
+        <h1 class="inputs__title">Select Tip %</h1>
+        <div class="inputs__buttons">
+          <button class="input__percent" id='5'>5%</button>
+          <button class="input__percent" id='10'>10%</button>
+          <button class="input__percent" id='15'>15%</button>
+          <button class="input__percent" id='25'>25%</button>
+          <button class="input__percent" id='50'>50%</button>
+          <input class="input__custom" type="text" name='custom-percent' id='custom-percent' placeholder="Custom">
+        </div>
+      </div>
+      <div class="inputs__people">
+        <h1 class="inputs__title">Number of People</h1>
+        <input type="number" name='number-of-people' id='number-of-people' placeholder="0">
+        <img src="images/icon-person.svg" alt="">
+      </div>
+    </div>
+    <div class="results">
+      <h1 class="inputs__titles a1">Tip Amount</h1>
+      <p class="resuts__unit a2">/ person</p>
+      <h1 class="results__result a3" id="tip">$0.00</h1>
+      <h1 class="inputs__titles a4">Total</h1>
+      <p class="resuts__unit a5" >/ person</p>
+      <button class="results__reset a6">Reset</button>
+      <h1 class="results__result a7" id="total">$0.00</h1>
+    </div>
+  </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Anthony Del Russo</a>.
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>
